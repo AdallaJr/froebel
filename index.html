@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -80,5 +80,137 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add custom CSS styles here */
+        * 
+        body {
+            text-align: center;
+            margin: 0;
+        }
+        
+        .fade-in-text, .fade-in-text2 {
+            opacity: 0; /* Set initial opacity to 0 */
+            transition: opacity 1s ease-in; /* Add a transition effect for opacity property, with 1s duration and ease-in timing function */
+            }
+
+        .fade-in-text.fade-in , .fade-in-text2.fade-in{
+            opacity: 1; /* When the fade-in class is added, set opacity to 1 */
+            }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            height: 40vh; 
+            padding: 20% 0 0;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <!-- Add your header content here -->
+            <h3 id="logo" class="fade-in-text">
+                Web Developer
+            </h3>
+            <h1 class="fade-in-text2">
+                JANN ADALLA
+            </h1>
+            <nav>
+                <!-- Add your navigation bar here -->
+                <h3 class="fade-in-text2">NAV</h3>
+            </nav>
+    </header>
+    <section id="hero">
+            <!-- Add your introduction content here -->
+            <p class="fade-in-text">
+                <h4>
+                    Introduction
+                </h4>
+                Catchy headline that showcases your expertise and specialization
+                Brief introduction about yourself as a web development freelancer
+                Overview of your skills, experience, and what makes you unique
+            </p> 
+    </section>
+    <main>
+        <section id="services">
+            <!-- Add your services offered content here -->
+            <h4>
+                Services Offered
+            </h4>
+            Detailed list of the web development services you provide (e.g., front-end development, back-end development, CMS customization, e-commerce development, etc.)
+            Description of your approach to web development and how you can add value to clients' projects
+            Highlights of any specialized technologies, frameworks, or platforms you work with
+        </section>
+
+        <section id="portfolio">
+            <!-- Add your portfolio content here -->
+            <h4>
+                Portfolio
+            </h4>
+            Showcase of your past web development projects with descriptions and screenshots
+            Links to live websites or demos for potential clients to explore
+            Testimonials or feedback from previous clients to build trust and credibility
+        </section>
+        
+        <section id="process">
+            <!-- Add your process content here -->
+            <p class="fade-in-text">
+                <h4>
+                    Process
+                </h4>
+                Step-by-step overview of your web development process, from initial consultation to project completion
+                Information on how you communicate and collaborate with clients during the development process
+                Timeline and milestones for completing projects, including any revision or feedback loops
+            </p>  
+        </section>
+        <section id="contact">
+            <!-- Add your contact information content here -->
+            <h4>
+                Contact Information
+            </h4>
+            Contact details, such as email address, phone number, and social media profiles, for potential clients to reach out to you
+            Call-to-action (CTA) to encourage clients to contact you for inquiries, consultations, or project bookings
+        </section>
+        <!-- <section id="blog">
+            Blog or Resources (optional):
+            If you maintain a blog or share resources related to web development, you can include a section that highlights your blog posts or resources
+            Topics that showcase your knowledge and expertise in web development, and can provide value to potential clients
+        </section> -->
+    </main>
+    <footer>
+        <h3>FOOTER</h3>
+    </footer>
+    
+    <script>
+        setTimeout(function() {
+            var fadeTextElements = document.querySelectorAll('.fade-in-text');
+            for (var i = 0; i < fadeTextElements.length; i++) {
+                fadeTextElements[i].classList.add('fade-in');
+                }
+            }, 300);
+
+        setTimeout(function() {
+            var fadeTextElements = document.querySelectorAll('.fade-in-text2');
+            for (var i = 0; i < fadeTextElements.length; i++) {
+               fadeTextElements[i].classList.add('fade-in');
+                }
+            }, 600); 
+    </script>
 </body>
 </html>
