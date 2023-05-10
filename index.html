@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Home</title>
-</head>
-<body>
-    <header class="container">
-        
-        <nav id="menu" class="navbar navbar-expand-md navbar-light">
-            <a href="index.html" class="navbar-brand">
-                <i class="fas fa-home"></i>
-            </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Home</title>
+        <style>
+            @media (min-width: 1024px) {
+            /* CSS rules for tablets */
+                #hero {
+                    height: 100vh;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            
+            <nav id="menu" class="navbar navbar-expand-md navbar-light">
+                <a href="index.html" class="navbar-brand">
+                    <i class="fas fa-home"></i>
+                </a>
+                    
+                <button 
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button> 
                 
-            <button 
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#toggleMobileMenu"
-                aria-controls="toggleMobileMenu"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-                <span class="navbar-toggler-icon"></span>
-            </button> 
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center">       
+                        <li><a class="nav-link" href="index.html">home</a></li>
+                        <!-- <li><a class="nav-link" href="#">academics</a></li> -->
+                        <li><a class="nav-link" href="#admissions">admissions</a></li>
+                        <li><a class="nav-link" href="#gallery">gallery</a></li>
+                        <li><a class="nav-link" href="#contacts">contacts</a></li>
+                        <!-- <li><a class="nav-link" href="blog.html">notices</a></li> -->
+                    </ul>
+                </div>                   
             
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center">       
-                    <li><a class="nav-link" href="index.html">home</a></li>
-                    <li><a class="nav-link" href="#">academics</a></li>
-                    <li><a class="nav-link" href="admissions.html">admissions</a></li>
-                    <li><a class="nav-link" href="gallery.html">gallery</a></li>
-                    <li><a class="nav-link" href="blog.html">notices</a></li>
-                </ul>
-            </div>                   
-           
-        </nav>
-        
-    </header>
-    
-    <div class="container text-center">
-        <main>
+            </nav>
             
-            <div id="hero" >
-                <h1 id="logo" style="font-size: 3em; padding: 30px 5px 0;">
-                    FROEBEL JUNIOR SCHOOL
-                </h1>   
-                <p style="margin: 100px 0;">
-                    Welcome to Froebel Junior School, a renowned school located in Kayole. Our school has grown steadily over the years, offering a comprehensive curriculum that focuses on holistic development. Join us in shaping the future of your child through quality education and nurturing care.
-                </p>
-                <h3 style="margin: 120px 0 0;">MOTTO</h3>
-                <p>Holistic Education</p>
-            </div>
-                            
-                <div id="gallery">
+        </header>
+
+        <main class="container text-center">
+                
+            <div id="hero" class="row">
+                    <div class="col-md-6 col-lg-12">
+                        <h2 id="logo">
+                            FROEBEL JUNIOR SCHOOL
+                        </h2>   
+                        <p id="hero-text">
+                            Welcome to Froebel Junior School, a renowned school located in Kayole. Our school has grown steadily over the years, offering a comprehensive curriculum that focuses on holistic development. Join us in shaping the future of your child through quality education and nurturing care.
+                        </p>
+                        <h3>MOTTO</h3>
+                        <p>Holistic Education</p>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-12"></div>
+            </div>                       
+            
+            <div id="gallery">
                     <h6>Check out our Gallery.</h6>
                     <p>Photo Gallery</p>
-                </div>
+            </div>
 
-                <div id="admissions">
+            <div id="admissions">
                     <h6 class="mt-3">Admissions</h6>
-                    <!-- <p>
-                        To see our admission process and requirements <a href="admissions.html"><span>read more...</span></a>
-                    </p> -->
-                    <h3 class="mb-5">Admissions Process and Requirements.</h3>
                     <p>
                         We're happy to welcome anyone wishing to enroll their child to our school. We take in new students from pre-school all through grade 6. <br>
                         Students coming from other schools are required to come with an official transfer letter from their previous school. <br>
                         The student's uniform is provided by the school.
                     </p>
-
-                    <h6>fee info</h6>
+                    <h3>Requirements.</h3>
+                    
                     <strong>admission fees</strong>
                     <br>
                     Pre School: Free <br>
                     Primary: ksh.200 <br>
+            </div>
 
-                    <p class="mt-3">application form</p>
-                </div>
-
-                <div id="blog">
+            <!-- <div id="blog">
                     <h6>Notices and Events.</h6>
                     <p>
                         <a href="blog.html"><span>Click here</span></a> to see school notices.
                     </p>
-                </div>
+                </div> -->
 
-                <div id="contacts" class="mt-3 mb-3">
+            <div id="contacts">
                     <h6>CONTACT US </h6>
                     Reach us through: <br> 0723 278 817
-                </div>
-                
+            </div>
+                    
         </main>
-    </div>
-    <footer class="text-light text-center" style="background-color: #000; height: 100px;">
-        @froebel 2023
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    
+        <footer class="text-light text-center" style="background-color: #000; height: 100px;">
+            @froebel 2023
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
 </html>
-
-
