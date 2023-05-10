@@ -11,9 +11,7 @@
             #hero {
                 height: 100vh;
             }
-            /* main div {
-                border: #000 solid 2px;
-            } */
+            
             h1,h2,h3,h4 {
                 color: #89375F;
             }
@@ -23,15 +21,16 @@
             body {
                 background-color: rgba(63, 112, 146, 0.25);
             }
+            
         </style>
     </head>
     <body>
-        <header>
+        <header class="justify-content-center">
             
             <nav id="menu" class="navbar navbar-expand-md navbar-light">
-                <a href="index.html" class="navbar-brand">
+                <!-- <a href="index.html" class="navbar-brand">
                     <i class="fas fa-home"></i>
-                </a>
+                </a> -->
                     
                 <button 
                     class="navbar-toggler"
@@ -46,12 +45,12 @@
                 </button> 
                 
                 <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                    <ul class="navbar-nav ms-auto text-center">       
-                        <li><a class="nav-link" href="index.html">home</a></li>
-                        <!-- <li><a class="nav-link" href="#">academics</a></li> -->
-                        <li><a class="nav-link" href="#admissions">admissions</a></li>
-                        <li><a class="nav-link" href="#gallery">gallery</a></li>
-                        <li><a class="nav-link" href="#contacts">contacts</a></li>
+                    <ul class="navbar-nav mx-auto text-center">       
+                        <li><a  style="color: #89375F;" class="nav-link" href="index.html">home</a></li>
+                        <!-- <li><a  style="color: #89375F;" class="nav-link" href="#">academics</a></li> -->
+                        <li><a  style="color: #89375F;" class="nav-link" href="#admissions">admissions</a></li>
+                        <li><a  style="color: #89375F;" class="nav-link" href="#gallery">gallery</a></li>
+                        <li><a  style="color: #89375F;" class="nav-link" href="#contacts">contacts</a></li>
                         <!-- <li><a class="nav-link" href="blog.html">notices</a></li> -->
                     </ul>
                 </div>                   
@@ -67,10 +66,10 @@
                         <h2 id="logo">
                             FROEBEL JUNIOR SCHOOL
                         </h2>   
-                        <p id="hero-text"  class="mb-2">
+                        <p id="hero-text">
                             Welcome to Froebel Junior School, a renowned school located in Kayole. Our school has grown steadily over the years, offering a comprehensive curriculum that focuses on holistic development. Join us in shaping the future of your child through quality education and nurturing care.
                         </p>
-                        <h5 class="mt-2">MOTTO</h5>
+                        <h5>MOTTO</h5>
                         <p>Holistic Education</p>
                     </div>
                     
@@ -78,7 +77,8 @@
             </div>                       
             
             <div id="gallery">
-                    <h6>Gallery</h6>
+                    <h6>Check out our Gallery.</h6>
+                    <p>Photo Gallery</p>
                     <div id="images" class="row container px-5">
                         <img src="froebel-parade.png" alt="picture" width="350px" class="col-md-6 py-1 col-lg-4">
                         <img src="froebel-parade.png" alt="picture" width="350px" class="col-md-6 py-1 col-lg-4">
@@ -87,19 +87,21 @@
                     </div>
             </div>
 
-            <div id="admissions" class="my-2">
+            <div id="admissions">
                     <h6 class="mt-3">Admissions</h6>
                     <p>
                         We're happy to welcome anyone wishing to enroll their child to our school. We take in new students from pre-school all through grade 6. <br>
                         Students coming from other schools are required to come with an official transfer letter from their previous school. <br>
                         The student's uniform is provided by the school.
                     </p>
-                    <h3>Requirements.</h3>
+                    <h6>Requirements.</h6>
                     
                     <strong>admission fees</strong>
-                    <br>
-                    Pre School: Free <br>
-                    Primary: ksh.200 <br>
+                    <div class="row">
+                        <span class="col-6 text-end">Pre School: Free</span> 
+                        <span class="col-6 text-start">Primary: ksh.200</span>
+                    </div>
+                     
             </div>
 
             <!-- <div id="blog">
@@ -109,7 +111,7 @@
                     </p>
                 </div> -->
 
-            <div id="contacts" class="my-2">
+            <div id="contacts" class="mt-4">
                     <h6>CONTACT US </h6>
                     Reach us through: <br> 0723 278 817
             </div>
@@ -123,3 +125,4 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
+
